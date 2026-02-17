@@ -1,0 +1,4 @@
+POST /generate-presigned-urls
+POST /merge-pdf
+
+Integrate with respective lambda functions

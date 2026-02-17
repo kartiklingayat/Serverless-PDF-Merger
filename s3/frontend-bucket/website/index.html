@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge PDFs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Merge PDFs</h1>
+
+        <div class="file-list-container">
+            <ul id="file-list"></ul>
+        </div>
+
+        <input type="file" id="file-input" accept=".pdf" multiple style="display: none;">
+
+        <div class="buttons">
+            <button id="add-files-btn">
+                <i class="fas fa-plus-circle"></i> Add Files
+            </button>
+
+            <button id="merge-btn" disabled>
+                <i class="fas fa-file-merge"></i> Merge & Download
+            </button>
+        </div>
+
+        <div id="status-container">
+            <span id="spinner-wrapper" class="hidden">
+                <i id="spinner" class="fa-solid fa-spinner"></i>
+            </span>
+            <span id="status-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
